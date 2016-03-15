@@ -1,0 +1,96 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function($) {
+			$('#accordion').find('.acc-toggle').click(function(){
+	
+				//Expand or collapse this panel
+				$(this).next().slideToggle('fast');
+	
+				//Hide the other panels
+				$(".acc-content").not($(this).next()).slideUp('fast');
+	
+			});
+		});
+	</script>
+<title>Frequently Asked Questions</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="headerstyle.css" />
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <a class="navbar-brand mylogo" href="researcher.html"><img src="nav-search-logo.png" id = "searchlogo"></a>
+                <ul class="nav navbar-nav navbar-right">
+        <li><a href="new-study.php"><span class="glyphicon glyphicon-plus"></span>
+        <p>New</p></a>
+        <li><a href="info.html"><span class="glyphicon glyphicon-question-sign"></span>
+        <p>FAQ</p></a>
+        <li><a href="instructions.html"><span class="glyphicon glyphicon-list"></span>
+        <p>Info</p></a>
+        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span>
+        <p>User</p></a>
+        </li>
+      
+      </ul>
+      </div>
+   </div>
+</nav>
+
+<div class="jumbotron">
+<div class="container">
+<h3>Frequently Asked Questions</h3>
+</div>
+</div>
+
+
+<div id="accordion">
+
+<h4 class="acc-toggle"><a href="#">How do I upload a study?</a></h4>
+<div class="acc-content default">
+<p>On your homepage, you may press the button "Submit a new study" to fill out a form with details of your study.
+</p></div>
+<h4 class="acc-toggle"><a href="#">How does using this app help me?</a></h4>
+<div class="acc-content">
+<p>The app matches you to potential study participants who already show an interest in being a part of research studies.
+It will save time and money on searching for participants, and part of the criteria screening is already done through a sign-up questionnaire.</p>
+</div>
+<h4 class="acc-toggle"><a href="#">How do I contact the study participants?</a></h4>
+<div class="acc-content">
+<p>Due to privacy concerns, we will not release any user information to researchers. 
+The partcipants will sign up for studies by contacting you directly through contact information you include in each study description.
+</p></div>
+<h4 class="acc-toggle"><a href="#">Does selecting participants this way present any problems with a biased sample?</a></h4>
+<div class="acc-content">
+<p>Although this app on the surface only reaches people who uses Facebook, there are tight support communities for dementia, where its members will tell one another about studies they think may be of interest.
+It is advised that researchers do not solely rely on this app to search for participants, however.
+</p></div>
+<h4 class="acc-toggle"><a href="#">Are the participants giving consent to participate when they get matched to a study?</a></h4>
+<div class="acc-content">
+<p>No. Participants are only matched to studies they may be interested in and/or are eligible to partake. 
+They can then choose whether they would like to participate or not, and will contact you to sign up subsequently.
+</p></div>
+</div>
+
+
+
+
+</body>
+</html>

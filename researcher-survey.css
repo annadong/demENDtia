@@ -1,0 +1,27 @@
+span.glyphicon-list {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-question-sign {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-user {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-plus {
+    font-size: 36px;
+    padding-right: 5px;
+    }
+
+.row {
+    display: inline;
+    }
+    
+.row :nth-child(even){
+  background-color: #f8f8f8;
+}

@@ -1,0 +1,30 @@
+.accordion-toggle {cursor: pointer;}
+
+.acc-content {
+display: none;
+}
+  
+.acc-content.default {
+display: block;
+}
+
+span.glyphicon-list {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-question-sign {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-user {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-plus{
+    font-size: 36px;
+    padding-right: 5px;
+}
+

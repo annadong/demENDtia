@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>demENDtia</title>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<link rel="stylesheet" href="style.css" />
+<script src="myjavascript.js"></script>
+</head>
+<body>
+<script>
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      redirectOnLogin();
+    } 
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+    
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '414891405371625',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  
+
+      FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+      });
+
+  };
+    
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+    
+  function redirectOnLogin() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('fbid').innerHTML = response.id;
+    });
+
+   window.location="identity.html";       
+  }
+</script>
+
+<!-- Logo -->
+
+
+<img id = "logo" src="logo.png">
+
+
+<!-- Login button -->
+
+ 
+ <div class="container">
+<p align="center">
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" size = "large"> Login with Facebook
+</fb:login-button></p>
+</div>
+
+<div id="status">
+</div>
+    
+</body>
+</html>
+
+<php>
+    echo $fbid;
+</php>

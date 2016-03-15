@@ -1,0 +1,91 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function($) {
+			$('#accordion').find('.acc-toggle').click(function(){
+	
+				//Expand or collapse this panel
+				$(this).next().slideToggle('fast');
+	
+				//Hide the other panels
+				$(".acc-content").not($(this).next()).slideUp('fast');
+	
+			});
+		});
+	</script>
+<title>Frequently Asked Questions</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="headerstyle.css" />
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <a class="navbar-brand mylogo" href="participant.html"><img src="nav-search-logo.png"id ="searchlogo"></a>
+                <ul class="nav navbar-nav navbar-right">
+        <li><a href="faq.html"><span class="glyphicon glyphicon-question-sign"></span>
+        <p>FAQ</p></a>
+        <li><a href="manual.html"><span class="glyphicon glyphicon-list"></span>
+        <p>Info</p></a>
+        <li><a href="account.html"><span class="glyphicon glyphicon-user"></span>
+        <p>User</p></a>
+        </li>
+      
+      </ul>
+      </div>
+   </div>
+</nav>
+
+<div class="jumbotron">
+<div class="container">
+<h3>Frequently Asked Questions</h3>
+</div>
+</div>
+
+
+<div id="accordion">
+
+<h4 class="acc-toggle"><a href="#">How do I sign up for a study?</a></h4>
+<div class="acc-content default">
+<p>You may contact the researcher directly to sign up using the information listed under each study description.
+</p></div>
+<h4 class="acc-toggle"><a href="#">Does this application give my consent for participating in studies?</a></h4>
+<div class="acc-content">
+<p>No. Using this app is only connecting you to researchers. You will sign separate consent form for participation in studies, provided by the researchers.</p>
+</div>
+<h4 class="acc-toggle"><a href="#">How do I contact the researcher?</a></h4>
+<div class="acc-content">
+<p>You may contact the researcher directly using the information listed under each study description.
+</p></div>
+<h4 class="acc-toggle"><a href="#">How do I know my information is protected?</a></h4>
+<div class="acc-content">
+<p>Your information will not be released to third-parties without your consent, such as your name, date of birth, and your location.
+</p></div>
+<h4 class="acc-toggle"><a href="#">How does signing up for a study benefit me?</a></h4>
+<div class="acc-content">
+<p>Your participation in studies is extremely valuable to scientists who are at the frontiers of dementia research.
+Scientific breakthroughs with your help will benefit people living with dementia, their caregivers, and people who are prone to this disease.
+</p></div>
+</div>
+
+
+
+
+</body>
+</html>

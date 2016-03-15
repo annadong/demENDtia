@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+<head>
+
+<title>Welcome to </search></title>
+	<link rel = "stylesheet" href = "identity.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+	
+	<script>
+	$(function() {
+	$("input[name$='value']").click(function() {
+	    var value = $(this).val();
+	    if (value == 'researcher') {
+	        window.location.assign("researcher-survey.php");
+	    }
+	    else if (value == 'participant') {
+	        window.location.assign("survey.php");
+	    }
+	});});
+	</script>
+</head>	
+<body>
+<img id = "logo" src="logo.png">
+
+<div class = "center">
+
+	<h1>Are you a: </h1>
+	
+	<form>
+			<input type = "radio" name = "value" value = "researcher" id = "researcher"> <label for = "researcher">Researcher</label><br><br>
+
+			<input type = "radio" name = "value" value = "participant" id = "participant"> <label for = "participant">Participant</label>
+			
+	</form>
+</div>
+</body>	
+</html>

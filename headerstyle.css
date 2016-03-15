@@ -1,0 +1,50 @@
+.container-fluid{
+    overflow: auto;
+}
+
+#searchlogo{
+    padding-top:0px;
+    margin-top:0px;
+    float:left;
+    max-height:450%;
+}
+
+
+
+span.glyphicon-list {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-question-sign {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-user {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-plus {
+    font-size: 36px;
+    padding-right: 5px;
+    }
+
+.row {
+    display: inline;
+    }
+    
+.row :nth-child(even){
+  background-color: #f8f8f8;
+}
+
+.accordion-toggle {cursor: pointer;}
+
+.acc-content {
+display: none;
+}
+  
+.acc-content.default {
+display: block;
+}

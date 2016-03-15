@@ -1,0 +1,33 @@
+.jumbotron {
+font-size: 48px;
+}
+
+span.glyphicon-list {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-question-sign {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+span.glyphicon-user {
+    font-size: 36px;
+    padding-right: 5px;
+    
+}
+
+span.glyphicon-plus {
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+.row {
+    display: inline;
+    }
+
+.footer {
+    background-color: #4d4d4d;
+    text-align: center;
+    }
